@@ -1,0 +1,24 @@
+---
+import ChecklistItem from './ChecklistItem.astro';
+import Button from './Button.astro';
+---
+
+<section class="bg-white py-12 md:py-20">
+  <div class="container mx-auto px-4 text-center">
+     <h2 class="text-2xl md:text-3xl font-bold mb-4 text-purple-700"> {/* Adjust color */}
+       DISCOVER WHY THIS WORKS WHEN OTHERS DON'T
+     </h2>
+     <p class="max-w-3xl mx-auto text-gray-700 mb-8 font-semibold">
+        The team who discovered this life changing formula has asked that you please follow these guidelines:
+     </p>
+
+    <ul class="space-y-4 max-w-2xl mx-auto text-left mb-10">
+        <ChecklistItem>This presentation can be change your life. Please send it along to anyone who may benefit from it.</ChecklistItem>
+        <ChecklistItem>Watch to the very end to learn everything about this scientifically backed, all-natural formula. Also, do NOT share this information and make it too public.</ChecklistItem>
+        <ChecklistItem>This presentation is ONLY being made available to a select number of individuals. The team behind this method is already facing pressure from big corporate bullies and Bowl Health Systems, and may be taken down at any point. If you are still seeing this, that powerful, transformational method. Please CLOSE THIS WINDOW NOW and free up your spot for the next visitor.</ChecklistItem>
+    </ul>
+
+    <Button text="TRANSFORM MY LIFE TODAY" href="#purchase-link" variant="primary" /> {/* Adjust link and maybe variant */}
+
+  </div>
+</section>
