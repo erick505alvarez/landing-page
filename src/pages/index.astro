@@ -4,6 +4,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import heroImage from "/src/assets/hero-image.webp";
+import checkmark from "../assets/icons/check-market-regular.svg";
 
 // Define metadata
 const title = "Unlock Your Body’s Fat-Burning Power Today";
@@ -70,7 +71,7 @@ const affiliate_link =
     >
       <a
         href={affiliate_link}
-        class="text-3xl font-bold text-white text-center mb-8 bg-secondary px-20 py-6 rounded-[100px]"
+        class="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center mb-8 bg-secondary px-10 py-6 rounded-[100px]"
         >DISCOVER THE SECRET TO NATURAL WEIGHT LOSS</a
       >
       <div class="text-xl">
@@ -167,33 +168,36 @@ const affiliate_link =
         contenteditable="false"
         class="list-none mb-8 text-xl space-y-8 text-left p-0"
       >
-        <li class="pl-[1em] sm:pl-[2em]">
-          <i
+        <!-- <li class="pl-[1em] sm:pl-[2em]"> -->
+        <li
+          class="relative pl-[2em] before:w-10 before:h-10 before:content-[''] before:absolute before:left-0 before:top-0 before:-translate-x-1/4
+             before:bg-[url('../assets/icons/check-mark-regular.svg')] before:-translate-y-1/10"
+        >
+          <!-- <i
             contenteditable="false"
             class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
-          ></i>
+          ></i> -->
           This presentation can change your life. Please send it along to anyone
           who may benefit from it.
         </li>
-        <li class="pl-[1em] sm:pl-[2em]">
-          <i
-            contenteditable="false"
-            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
-          ></i>
-          Watch to the very end to learn everything about their scientifically backed,
-          all-natural formula. Also, do NOT abuse the information and advice they
-          provide.
+        <li
+          class="relative pl-[2em] before:w-10 before:h-10 before:content-[''] before:absolute before:left-0 before:top-0 before:-translate-x-1/4
+          before:bg-[url('../assets/icons/check-mark-regular.svg')] before:-translate-y-1/10"
+        >
+          Watch to the very end to learn everything about their scientifically
+          backed, all-natural formula. Also, do NOT abuse the information and
+          advice they provide.
         </li>
-        <li class="pl-[1em] sm:pl-[2em]">
-          <i
-            contenteditable="false"
-            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
-          ></i>
-          This presentation is ONLY being made available to a select number of individuals.
-          The team behind this method is already facing pressure from the corporate
-          bullies and rival “health experts” and may be taken down at any time. If
-          you are not interested in this powerful, transformational method, PLEASE
-          CLOSE THIS WINDOW NOW and free up your spot for the next visitor.
+        <li
+          class="relative pl-[2em] before:w-10 before:h-10 before:content-[''] before:absolute before:left-0 before:top-0 before:-translate-x-1/4
+             before:bg-[url('../assets/icons/check-mark-regular.svg')] before:-translate-y-1/10"
+        >
+          This presentation is ONLY being made available to a select number of
+          individuals. The team behind this method is already facing pressure
+          from the corporate bullies and rival “health experts” and may be taken
+          down at any time. If you are not interested in this powerful,
+          transformational method, PLEASE CLOSE THIS WINDOW NOW and free up your
+          spot for the next visitor.
         </li>
       </ul>
       <a
