@@ -9,4 +9,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: "static",
+  site: "https://explore.healthbodybalance.org",
+  base: "/",
 });
