@@ -1,16 +1,24 @@
 ---
+// /src/components/Footer.astro
+
 const year = new Date().getFullYear();
 ---
-<footer class="bg-gray-100 text-center py-6 mt-10">
-  <div class="container mx-auto px-4 text-sm text-gray-500">
-    <p>Copyright &copy; {year} Your Company Name. All Rights Reserved.</p>
-    <div class="mt-2 space-x-4">
-       <a href="/terms" class="hover:underline">Terms of Service</a>
-       <a href="/privacy" class="hover:underline">Privacy Policy</a>
-       {/* Add other relevant links */}
-    </div>
-    <p class="mt-4 text-xs">
-        Disclaimer: [Add your disclaimer text here based on the original site's footer content]
+
+<footer class="bg-gray-800 text-white py-4">
+  <div class="container mx-auto px-4 text-center">
+    <p class="text-sm mb-2">
+      <a href="/privacy-policy" class="hover:underline">Privacy Policy</a> |
+      <a href="/disclaimer" class="hover:underline">Disclaimer</a>
+    </p>
+    <p class="text-xs mb-2">
+      https://discover.healthbodybalance.org © {year} All Rights Reserved.
+    </p>
+    <p class="text-xs">
+      <a href="https://discover.healthbodybalance.org" class="underline"
+        >This site</a
+      > is not a part of the Facebook website or Facebook Inc. Additionally, this
+      site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK,
+      Inc.
     </p>
   </div>
 </footer>

@@ -1,13 +1,212 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import SectionBenefits from '../components/SectionBenefits.astro';
-import SectionWhy from '../components/SectionWhy.astro';
+// /src/pages/index.astro
+
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import heroImage from "/src/assets/hero-image.webp";
+
+// Define metadata
+const title = "Unlock Your Body’s Fat-Burning Power Today";
+const description =
+  "Discover the secret to natural weight loss without diets or stress.";
+
+const affiliate_link =
+  "https://mitolyn.com/welcome/?hop=erick505&hopId=2b37d610-8980-4df8-8ce4-b456ef11d9d2";
 ---
 
-<Layout title="Landing Page - Unlock Your Potential">
-	<Hero />
-	<SectionBenefits />
-	<SectionWhy />
-	{/* Add any other sections needed */}
+<Layout title={title}>
+  <!-- Hero Section -->
+  <section id="hero" class="py-8 bg-cover bg-center">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+      <div class="w-full lg:w-1/2 p-4">
+        <a href={affiliate_link}
+          ><Image
+            src={heroImage}
+            alt="Product illustration or related visual"
+            width={500}
+            height={300}
+            format="webp"
+            quality={80}
+            class="rounded-lg shadow-md w-full h-auto"
+          /></a
+        >
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <h1 class="title text-3xl md:text-4xl mb-4 text-primary">
+          Unlock Your Body’s Fat-Burning Power Today
+        </h1>
+        <h2 class="title text-2xl md:text-3xl mb-4 text-primary">
+          No Diets, No Stress, Just Results Guaranteed!
+        </h2>
+        <p class="text-lg mb-4">
+          The Natural Way to Reignite Energy, Burn Fat, and Take Back Control of
+          Your Body
+        </p>
+        <p class="text-base mb-4">
+          Uncover the secret to supercharge your body from the ground up—at the
+          cellular level, where real energy and your metabolism begin. Mornings
+          get easier. The fog lifts. Your body starts responding again to help
+          you burn fat in your sleep.
+        </p>
+        <p class="text-base mb-8">
+          And with that comes something even better than weight loss or more
+          energy—you start to feel like yourself again. More present, more
+          alive, and more ca...
+        </p>
+        <button
+          class="bg-primary text-xl text-white px-4 py-2 rounded hover:bg-opacity-90 transition duration-300"
+        >
+          Read More...
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discovery Section -->
+  <section id="discovery" class="py-8 bg-gray-100">
+    <div
+      class="container mx-auto px-4 flex flex-col justify-center items-center"
+    >
+      <a href={affiliate_link}
+        ><button
+          class="text-3xl font-bold text-white mb-8 bg-secondary px-20 py-6 rounded-[100px]"
+          >DISCOVER THE SECRET TO NATURAL WEIGHT LOSS</button
+        ></a
+      >
+      <div>
+        <p class="text-lg mb-4">
+          Are you constantly feeling tired, struggling to lose weight, and
+          watching your energy fade no matter how well you eat or how often you
+          move?
+        </p>
+        <p class="text-lg mb-4">
+          For a lot of people, slow metabolism isn’t just about aging—it’s a
+          signal your mitochondria (your cells’ energy engines) are no longer
+          functioning efficiently.
+        </p>
+        <p class="text-lg mb-4">
+          Mitolyn is a breakthrough blend of <strong
+            >natural, science-backed nutrients</strong
+          > specifically designed to:
+        </p>
+        <ul class="list-none p-0 mb-4 space-y-4">
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">🔥</span>Supercharge your
+            mitochondria to burn fat in your sleep
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">⚡</span>Boost daily energy—no
+            crashes, no jitters
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">✨</span>Support cellular repair
+            and long-term metabolic health
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">🌟</span>Help you feel younger,
+            lighter, and more vibrant
+          </li>
+        </ul>
+        <p class="text-lg mb-4">
+          Each capsule delivers targeted support to revive your body’s <strong
+            >natural energy production and fat-burning power</strong
+          >—especially if you’re over 30 and feeling the shift.
+        </p>
+        <p class="text-lg mb-4">
+          Mitolyn is rooted in <strong>cutting-edge research</strong> to fuel your
+          body’s <strong>core energy centers</strong>. This helps you <strong
+            >break free</strong
+          > from burnout, belly fat, and brain fog.
+        </p>
+        <ul class="list-none p-0 mb-4 space-y-4">
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">✅</span>Supports metabolism at the
+            cellular level
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">✅</span>100% natural and
+            stimulant-free
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em]">✅</span>Works even if you’re not
+            working out every day
+          </li>
+          <li class="pl-[2em]">
+            <span class="-ml-[2em] mr-[1em] no-underline">✅</span><span
+              class="underline">Unlock the life you deserve</span
+            >
+          </li>
+        </ul>
+
+        <p class="text-lg mb-4">
+          Because it’s not just about burning fat or boosting energy—it’s about
+          living the kind of life where you have <strong
+            >the energy to show up fully, every day.</strong
+          >
+        </p>
+        <p class="text-lg mb-4 font-bold text-left">
+          To find out more, please watch this important video on the next page!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Works Section -->
+  <section id="why-it-works" class="py-8">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="title text-4xl md:text-5xl leading-12 md:leading-16 mb-4">
+        DISCOVER WHY THIS WORKS WHEN OTHERS DON'T
+      </h2>
+      <h3 class="title text-3xl md:text-4xl mb-4 leading-10 md:leading-12">
+        The team who discovered this <span class="underline"
+          >life changing formula</span
+        > has asked that you please follow these guidelines:
+      </h3>
+
+      <ul
+        contenteditable="false"
+        class="list-none mb-8 text-xl space-y-8 text-left p-0"
+      >
+        <li class="pl-[1em] sm:pl-[2em]">
+          <i
+            contenteditable="false"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+          ></i>
+          This presentation can change your life. Please send it along to anyone
+          who may benefit from it.
+        </li>
+        <li class="pl-[1em] sm:pl-[2em]">
+          <i
+            contenteditable="false"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+          ></i>
+          Watch to the very end to learn everything about their scientifically backed,
+          all-natural formula. Also, do NOT abuse the information and advice they
+          provide.
+        </li>
+        <li class="pl-[1em] sm:pl-[2em]">
+          <i
+            contenteditable="false"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+          ></i>
+          This presentation is ONLY being made available to a select number of individuals.
+          The team behind this method is already facing pressure from the corporate
+          bullies and rival “health experts” and may be taken down at any time. If
+          you are not interested in this powerful, transformational method, PLEASE
+          CLOSE THIS WINDOW NOW and free up your spot for the next visitor.
+        </li>
+      </ul>
+      <a href={affiliate_link}>
+        <button
+          class="text-4xl font-bold font-oxygen text-white mb-8 bg-secondary px-10 py-4 rounded-[100px]"
+        >
+          TRANSFORM MY LIFE TODAY
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Load External Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../scripts/url-modifier.js"></script>
 </Layout>

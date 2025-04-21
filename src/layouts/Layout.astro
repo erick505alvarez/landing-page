@@ -1,31 +1,34 @@
 ---
-import Footer from '../components/Footer.astro';
+import "../styles/global.css"; // Import Tailwind CSS
+import "../assets/icons.ts"; // import icons
+import Footer from "../components/Footer.astro";
 
 interface Props {
-	title: string;
-	description?: string; // Optional meta description
+  title: string;
+  description?: string; // Optional meta description
 }
 
-const { title, description = 'Unlock your body\'s potential.' } = Astro.props;
-
-import "../styles/global.css";
+const { title, description = "Unlock your body's potential" } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		{/* Basic Tailwind reset/base styles are applied automatically via the integration */}
-	</head>
-	<body class="bg-white text-gray-800 font-sans"> {/* Adjust default font/colors if needed */}
-		<main>
-			<slot /> {/* Page content will be injected here */}
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{description}" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white text-gray-800 font-oxygen">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+      <div class="h-2"></div>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+    <!-- Footer -->
+    <Footer />
+  </body>
 </html>

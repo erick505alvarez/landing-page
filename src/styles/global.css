@@ -1,1 +1,22 @@
+@import "./fonts.css"; /* fonts */
+@import "@fortawesome/fontawesome-free/css/all.min.css"; /* icons */
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #d2386c;
+  --color-secondary: #41b99f;
+  --color-accent: #ff4500;
+
+  /* --font-bevan: Bevan, "sans-serif"; */
+  --font-bevan: Bevan, sans-serif;
+  --font-oxygen: Oxygen, helvetica, serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 85%;
+}
+
+.title {
+  @apply font-bevan font-bold text-primary;
+}
