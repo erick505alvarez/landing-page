@@ -16,14 +16,14 @@ const affiliate_link =
 
 <Layout title={title}>
   <!-- Hero Section -->
-  <section id="hero" class="py-8 bg-cover bg-center">
+  <section id="hero" class="pt-8 pb-4">
     <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
       <div class="w-full lg:w-1/2 p-4">
         <a href={affiliate_link}
           ><Image
             src={heroImage}
-            alt="Product illustration or related visual"
-            width={500}
+            alt="Product illustration"
+            width={600}
             height={300}
             format="webp"
             quality={80}
@@ -53,25 +53,25 @@ const affiliate_link =
           energy—you start to feel like yourself again. More present, more
           alive, and more ca...
         </p>
-        <button
-          class="bg-primary text-xl text-white px-4 py-2 rounded hover:bg-opacity-90 transition duration-300"
+        <a
+          href={affiliate_link}
+          class="hover:cursor-pointer bg-primary text-xl text-white px-4 py-2 rounded hover:bg-opacity-90 transition duration-300"
         >
           Read More...
-        </button>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Discovery Section -->
-  <section id="discovery" class="py-8 bg-gray-100">
+  <section id="discovery" class="py-4">
     <div
       class="container mx-auto px-4 flex flex-col justify-center items-center"
     >
-      <a href={affiliate_link}
-        ><button
-          class="text-3xl font-bold text-white mb-8 bg-secondary px-20 py-6 rounded-[100px]"
-          >DISCOVER THE SECRET TO NATURAL WEIGHT LOSS</button
-        ></a
+      <a
+        href={affiliate_link}
+        class="text-3xl font-bold text-white text-center mb-8 bg-secondary px-20 py-6 rounded-[100px]"
+        >DISCOVER THE SECRET TO NATURAL WEIGHT LOSS</a
       >
       <div>
         <p class="text-lg mb-4">
@@ -152,8 +152,8 @@ const affiliate_link =
   </section>
 
   <!-- Why It Works Section -->
-  <section id="why-it-works" class="py-8">
-    <div class="container mx-auto px-4 text-center">
+  <section id="why-it-works" class="py-4">
+    <div class="container mx-auto px-4 text-center mb-8">
       <h2 class="title text-4xl md:text-5xl leading-12 md:leading-16 mb-4">
         DISCOVER WHY THIS WORKS WHEN OTHERS DON'T
       </h2>
@@ -170,7 +170,7 @@ const affiliate_link =
         <li class="pl-[1em] sm:pl-[2em]">
           <i
             contenteditable="false"
-            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
           ></i>
           This presentation can change your life. Please send it along to anyone
           who may benefit from it.
@@ -178,7 +178,7 @@ const affiliate_link =
         <li class="pl-[1em] sm:pl-[2em]">
           <i
             contenteditable="false"
-            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
           ></i>
           Watch to the very end to learn everything about their scientifically backed,
           all-natural formula. Also, do NOT abuse the information and advice they
@@ -187,7 +187,7 @@ const affiliate_link =
         <li class="pl-[1em] sm:pl-[2em]">
           <i
             contenteditable="false"
-            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em]"
+            class="fas fa-check text-green-500 text-3xl -ml-[1.5em] mr-[0.5em] sm:-ml-[2em] sm:mr-[1em] translate-y-1"
           ></i>
           This presentation is ONLY being made available to a select number of individuals.
           The team behind this method is already facing pressure from the corporate
@@ -196,13 +196,11 @@ const affiliate_link =
           CLOSE THIS WINDOW NOW and free up your spot for the next visitor.
         </li>
       </ul>
-      <a href={affiliate_link}>
-        <button
-          class="text-4xl font-bold font-oxygen text-white mb-8 bg-secondary px-10 py-4 rounded-[100px]"
-        >
-          TRANSFORM MY LIFE TODAY
-        </button>
-      </a>
+      <a
+        href={affiliate_link}
+        class="text-2xl sm:text-3xl md:text-4xl font-bold font-oxygen text-center text-white mb-8 bg-secondary px-10 py-4 rounded-[100px] block"
+        >TRANSFORM MY LIFE TODAY</a
+      >
     </div>
   </section>
 
